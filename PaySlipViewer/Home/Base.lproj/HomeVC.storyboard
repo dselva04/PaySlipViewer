@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lGg-hM-wAe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="PaySlipViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9VG-ZO-kGH">
+                                <rect key="frame" x="95" y="124" width="185" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_receipt" translatesAutoresizingMaskIntoConstraints="NO" id="Bch-G0-AnL">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0X8-Nt-MSe"/>
+                                            <constraint firstAttribute="width" constant="50" id="c4v-dT-9jh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay SlipS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1W-tO-jbs">
+                                        <rect key="frame" x="55" y="7" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFp-4i-xYP">
+                                <rect key="frame" x="56.5" y="318" width="102" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Payslip"/>
+                                <connections>
+                                    <action selector="newPayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXg-2h-w9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s2-4n-ah1">
+                                <rect key="frame" x="215.5" y="318" width="104.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="View Payslip"/>
+                                <connections>
+                                    <action selector="viewPayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yy2-oA-P4N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKf-gT-jaW">
+                                <rect key="frame" x="155.5" y="409" width="64.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bonus"/>
+                                <connections>
+                                    <action selector="bonusBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqx-C6-zrv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1s2-4n-ah1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Rb-pf-UEf"/>
+                            <constraint firstItem="9VG-ZO-kGH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="5s0-ot-643"/>
+                            <constraint firstItem="9VG-ZO-kGH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8CF-uc-ORM"/>
+                            <constraint firstItem="oFp-4i-xYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="DbB-h5-5MI"/>
+                            <constraint firstItem="UKf-gT-jaW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhL-87-ES2"/>
+                            <constraint firstItem="UKf-gT-jaW" firstAttribute="top" secondItem="1s2-4n-ah1" secondAttribute="bottom" constant="60" id="frH-kv-EZ3"/>
+                            <constraint firstItem="oFp-4i-xYP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gr9-V7-Z7m"/>
+                            <constraint firstItem="1s2-4n-ah1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="oR3-uG-V7t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fyw-fL-Agz"/>
+                    <connections>
+                        <outlet property="bonusBtn" destination="UKf-gT-jaW" id="WEm-Kd-Cbd"/>
+                        <outlet property="newPayBtn" destination="oFp-4i-xYP" id="CpD-QD-yml"/>
+                        <outlet property="viewPayBtn" destination="1s2-4n-ah1" id="V8o-Rp-CwG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="80.50974512743629"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="loF-eJ-NWG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lGg-hM-wAe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O9X-r2-h7C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pFg-8z-RFD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKK-4Y-mM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="80.50974512743629"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_receipt" width="490.5" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
