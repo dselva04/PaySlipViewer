@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,13 +99,12 @@
 		2593877C274CB6670092C021 /* PaySlipViewer */ = {
 			isa = PBXGroup;
 			children = (
+				259387AE274CBBE80092C021 /* Launch Screen */,
+				259387AD274CB8D20092C021 /* Supporting Files */,
 				2593877D274CB6670092C021 /* AppDelegate.swift */,
 				2593877F274CB6670092C021 /* SceneDelegate.swift */,
 				25938781274CB6670092C021 /* ViewController.swift */,
 				25938783274CB6670092C021 /* Main.storyboard */,
-				25938786274CB6690092C021 /* Assets.xcassets */,
-				25938788274CB6690092C021 /* LaunchScreen.storyboard */,
-				2593878B274CB6690092C021 /* Info.plist */,
 			);
 			path = PaySlipViewer;
 			sourceTree = "<group>";
@@ -125,6 +124,23 @@
 				259387A0274CB6690092C021 /* PaySlipViewerUITestsLaunchTests.swift */,
 			);
 			path = PaySlipViewerUITests;
+			sourceTree = "<group>";
+		};
+		259387AD274CB8D20092C021 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25938786274CB6690092C021 /* Assets.xcassets */,
+				2593878B274CB6690092C021 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		259387AE274CBBE80092C021 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25938788274CB6690092C021 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +223,7 @@
 				};
 			};
 			buildConfigurationList = 25938775274CB6670092C021 /* Build configuration list for PBXProject "PaySlipViewer" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -441,11 +457,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaySlipViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pay SlipS";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,11 +486,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaySlipViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pay SlipS";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
